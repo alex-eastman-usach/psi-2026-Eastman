@@ -1,10 +1,13 @@
 """Comando de consola psi-demo."""
 import argparse
 from pathlib import Path
+
 import numpy as np
-from matplotlib.figure import Figure # sin pyplot: no abre ventanas (Docker, CI)
+from matplotlib.figure import Figure  # sin pyplot: no abre ventanas (Docker, CI)
 
 from psi_lab.senales import espectro, senoidal
+
+
 def main(argv=None):
     parser = argparse.ArgumentParser(
     prog="psi-demo",

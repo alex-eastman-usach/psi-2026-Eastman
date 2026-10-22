@@ -1,5 +1,7 @@
 """Generacion de senales muestreadas y espectro de amplitud."""
 import numpy as np
+
+
 def senoidal(f, fs, duracion, amplitud=1.0, fase=0.0):
     """Senoidal de frecuencia f [Hz] muestreada a fs [Hz] durante duracion [s].
     Retorna (t, x): instantes de muestreo y valores de la senal.
