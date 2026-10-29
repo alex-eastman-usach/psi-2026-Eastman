@@ -11,3 +11,12 @@ services:
       context: .
       target: dev
     image: psi-lab:dev
+  lab1:
+    build:
+      context: .
+      target: runtime
+    image: psi-lab:runtime
+    entrypoint: ["psi-lab1"]
+    volumes:
+      - ./out:/out
+      - ./data:/app/data

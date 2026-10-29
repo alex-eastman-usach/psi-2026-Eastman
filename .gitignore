@@ -6,4 +6,11 @@ build/
 dist/
 .pytest_cache/
 .ruff_cache/
+#Lo de abajo es para evitar subir archivos al git, todo online
+data/ 
+datos/
+*.wav
+*.mp3
+*.flac
+*.ogg
 out/
