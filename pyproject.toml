@@ -25,3 +25,4 @@ psi-lab1 = "psi_lab.lab1.__main__:main"
 where = ["src"]
 [tool.pytest.ini_options]
 testpaths = ["tests"]
+addopts = ["--import-mode=importlib"]
