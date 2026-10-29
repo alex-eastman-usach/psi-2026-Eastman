@@ -5,5 +5,12 @@
 .pytest_cache
 .ruff_cache
 dist
+#Para evitar subir archivos de audio al git
 build
+data/
+datos/
+*.wav
+*.mp3
+*.flac
+*.ogg
 out

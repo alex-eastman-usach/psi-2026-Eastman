@@ -11,11 +11,13 @@ authors = [{ name = "Nombre Apellido", email = "nombre.apellido@usach.cl" }]
 dependencies = [
     "numpy>=1.26",
     "matplotlib>=3.8",
+    "scipy>=1.11",
 ]
 [project.optional-dependencies]
 dev = ["pytest>=8", "ruff>=0.5"]
 [project.scripts]
 psi-demo = "psi_lab.cli:main"
+psi-lab1 = "psi_lab.lab1.__main__:main"
 [tool.setuptools.packages.find]
 where = ["src"]
 [tool.pytest.ini_options]
