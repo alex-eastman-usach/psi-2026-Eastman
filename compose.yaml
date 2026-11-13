@@ -1,22 +1,18 @@
 services:
-  demo:
-    build:
-      context: .
-      target: runtime
-    image: psi-lab:runtime
-    volumes:
-      - ./out:/out
   tests:
     build:
       context: .
       target: dev
     image: psi-lab:dev
+
   lab1:
     build:
       context: .
       target: runtime
     image: psi-lab:runtime
     entrypoint: ["psi-lab1"]
+    command: ["--salida", "/out/lab1"]
     volumes:
       - ./out:/out
+      - ./informe:/app/informe
       - ./data:/app/data

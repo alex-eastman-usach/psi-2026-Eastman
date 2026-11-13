@@ -33,8 +33,8 @@ jobs:
       - uses: actions/checkout@v4
       - run: docker compose build
       - run: docker compose run --rm tests
-      - run: docker compose run --rm demo
+      - run: docker compose run --rm lab1
       - uses: actions/upload-artifact@v4
         with:
-          name: demo-figura
-          path: out/demo.png
+          name: lab1-resultados
+          path: out/lab1/
